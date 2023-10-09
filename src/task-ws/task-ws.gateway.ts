@@ -32,7 +32,7 @@ export class TaskWsGateway implements OnGatewayConnection, OnGatewayDisconnect {
       id:undefined,
       dueBy:today,
       name:payload.message,
-      userId:5
+      userId:1
     }
     await this.taskWsService.createTask(newTask);
     const listTask=await this.taskWsService.getAllTasks()
