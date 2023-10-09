@@ -6,10 +6,10 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { SeedModule } from './seed/seed.module';
 import { TaskModule } from './task/task.module';
-
+import { BackgroundProcessorModule } from './background-processor/background-processor.module';
 
 @Module({
-  imports: [AuthModule, UserModule, SeedModule, TaskModule],
+  imports: [AuthModule, UserModule, SeedModule, TaskModule, BackgroundProcessorModule],
   controllers: [AppController],
   providers: [AppService, PrismaService],
 })
